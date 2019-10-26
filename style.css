@@ -93,6 +93,24 @@ img.avatar {
   margin-right: 6px;
 }
 
+.job-company::after {
+  content:'';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  visibility: hidden;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s ease-out;
+}
+
+.job-company:hover::after {
+  visibility: visible;
+  transform: scale(1);
+}
+
 /***********************************
 * =Experience
 ***********************************/
