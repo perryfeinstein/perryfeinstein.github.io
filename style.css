@@ -86,6 +86,7 @@ img.avatar {
 .link-item {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   flex: 1;
 }
 
